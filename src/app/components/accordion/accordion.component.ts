@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {AccordionItem} from "./accordion-item.interface";
 import {faAngleDown, faAngleUp} from "@fortawesome/free-solid-svg-icons";
+import {IconDefinition} from "@fortawesome/fontawesome-svg-core";
 
 @Component({
   selector: 'app-accordion',
@@ -9,7 +10,7 @@ import {faAngleDown, faAngleUp} from "@fortawesome/free-solid-svg-icons";
 })
 export class AccordionComponent {
   @Input() public items: AccordionItem[] = [];
-  public faAngleDown = faAngleDown;
+  public faAngleDown: IconDefinition = faAngleDown;
 
   public toggle(item: AccordionItem) {
     item.isExpanded = !item.isExpanded;

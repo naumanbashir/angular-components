@@ -7,9 +7,9 @@ import * as icons from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-  @Input() public title = '';
-  @Input() public icon = '';
-  @Input() public subTitle = '';
+  @Input() public title: string = '';
+  @Input() public icon: string = '';
+  @Input() public subTitle: string = '';
   protected readonly icons = icons;
   // @ts-ignore
   public iconClass;

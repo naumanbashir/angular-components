@@ -7,10 +7,19 @@
     <li>Other</li>
   </ul>
 </app-toolbar>
-<app-card [icon]="'faCalendar'" [title]="'Card'" [subTitle]="'Component'">
+<!-- Card Component -->
+<app-card [icon]="'faCircleInfo'" [title]="'Card'" [subTitle]="'Component'">
   <p footer>Card Footer</p>
   <p body>Card Body</p>
 </app-card>
-<app-card [icon]="'faCalendar'" [title]="'Accordion'" [subTitle]="'Component'">
+
+<!-- Accordion Component -->
+<app-card [icon]="'faCircleInfo'" [title]="'Accordion'" [subTitle]="'Component'">
   <app-accordion body [items]="accordionItems"></app-accordion>
+</app-card>
+
+<!-- Progress Bar -->
+<app-card [icon]="'faCircleInfo'" [title]="'Progress Bar'" [subTitle]="'Component'">
+  <app-progress-bar body [value]="progressValue"></app-progress-bar>
+  <button footer class="btn btn-primary" (click)="progressValue = 75;">Update</button>
 </app-card>

@@ -7,7 +7,9 @@ import {AccordionItem} from "./components/accordion/accordion-item.interface";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-compnents';
+  title: string = 'angular-compnents';
+  progressValue: number = 25;
+
   public accordionItems: AccordionItem[] = [
     {
       title: 'Example 1',
