@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AccordionItem} from "./components/accordion/accordion-item.interface";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-compnents';
+  public accordionItems: AccordionItem[] = [
+    {
+      title: 'Example 1',
+      content: 'Example 1 Content',
+      isExpanded: false
+    },
+    {
+      title: 'Example 2',
+      content: 'Example 3 Content',
+      isExpanded: false
+    }
+  ];
 }

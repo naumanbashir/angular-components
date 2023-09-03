@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { CardComponent } from './components/card/card.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { AccordionComponent } from './components/accordion/accordion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    CardComponent
+    CardComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,10 @@
     <li>Other</li>
   </ul>
 </app-toolbar>
-<app-card [icon]="'faCalendar'" [title]="'Card Component'" [subTitle]="'Card Sub Title'">
+<app-card [icon]="'faCalendar'" [title]="'Card'" [subTitle]="'Component'">
   <p footer>Card Footer</p>
   <p body>Card Body</p>
+</app-card>
+<app-card [icon]="'faCalendar'" [title]="'Accordion'" [subTitle]="'Component'">
+  <app-accordion body [items]="accordionItems"></app-accordion>
 </app-card>
